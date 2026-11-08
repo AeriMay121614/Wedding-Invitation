@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #faf7f1;
+  color: #4b4035;
+  font-family: 'Poppins', 'Noto Sans Myanmar', sans-serif;
+  font-weight: 300;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(35,25,20,.38), rgba(35,25,20,.48)),
+    url("images/cover.jpg") center/cover no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.hero-overlay {
+  max-width: 850px;
+}
+
+.small-title,
+.eyebrow {
+  letter-spacing: 4px;
+  font-size: 11px;
+  color: #b38a53;
+  margin-bottom: 18px;
+}
+
+.hero .small-title {
+  color: #f1dfc1;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(42px, 8vw, 85px);
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 25px 0;
+}
+
+.hero h1 span {
+  color: #dfc18e;
+  font-style: italic;
+}
+
+.hero-subtitle {
+  font-size: 11px;
+  letter-spacing: 3px;
+  line-height: 2;
+}
+
+.hero-line {
+  width: 65px;
+  height: 1px;
+  background: #d7b77e;
+  margin: 28px auto;
+}
+
+/* BUTTON */
+
+.gold-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #a78352;
+  padding: 14px 28px;
+  margin-top: 28px;
+  letter-spacing: 2px;
+  font-size: 11px;
+  transition: .3s;
+  border: 1px solid #a78352;
+}
+
+.gold-button:hover {
+  background: transparent;
+  color: #a78352;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #faf7f1;
+  padding: 18px 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  border-bottom: 1px solid #e8dfd1;
+}
+
+.navbar a {
+  color: #625447;
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 100px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(38px, 5vw, 55px);
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #594737;
+}
+
+.burmese {
+  font-family: 'Noto Sans Myanmar', sans-serif;
+  font-size: 14px;
+  line-height: 2.2;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.english {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  max-width: 600px;
+  line-height: 1.7;
+  margin: 25px auto;
+  color: #9a7953;
+}
+
+/* COUPLE */
+
+.couple {
+  background: #f1ece3;
+}
+
+.couple-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.person {
+  width: 40%;
+}
+
+.person img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 200px 200px 0 0;
+}
+
+.person h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.person p {
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-top: 8px;
+}
+
+.ampersand {
+  font-family: 'Cormorant Garamond', serif;
+  color: #b38a53;
+  font-size: 55px;
+}
+
+/* QUOTE */
+
+.quote-section {
+  min-height: 350px;
+  background: #6a5848;
+  color: #f7ead5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 35px;
+  line-height: 1.5;
+}
+
+.quote-section span {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-top: 25px;
+}
+
+/* GALLERY */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+.gallery-grid img:nth-child(3n) {
+  height: 420px;
+}
+
+/* WEDDING DETAILS */
+
+.details {
+  background: #f1ece3;
+}
+
+.date-card {
+  border-top: 1px solid #b89a6c;
+  border-bottom: 1px solid #b89a6c;
+  max-width: 350px;
+  margin: 40px auto;
+  padding: 25px;
+}
+
+.date-day {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 85px;
+  line-height: 1;
+}
+
+.date-card p:not(.date-day) {
+  letter-spacing: 4px;
+  margin-top: 8px;
+}
+
+.detail-info {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+}
+
+.detail-info h3 {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #a78352;
+  margin-bottom: 15px;
+}
+
+.detail-info p {
+  font-size: 13px;
+  line-height: 2;
+}
+
+/* COUNTDOWN */
+
+.countdown {
+  margin-top: 80px;
+}
+
+.countdown h3 {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.count-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.count-grid div {
+  border: 1px solid #c8b18f;
+  width: 100px;
+  padding: 20px 10px;
+}
+
+.count-grid strong {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.count-grid span {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/* RSVP */
+
+.rsvp {
+  padding: 110px 20px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #4d4035;
+  color: #f6ead8;
+  text-align: center;
+  padding: 55px 20px;
+}
+
+footer h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+footer p {
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-top: 15px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+  .navbar {
+    gap: 13px;
+    padding: 15px 5px;
+  }
+
+  .navbar a {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .section {
+    padding: 75px 6%;
+  }
+
+  .couple-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .person {
+    width: 85%;
+  }
+
+  .person img {
+    height: 380px;
+  }
+
+  .ampersand {
+    font-size: 40px;
+  }
+
+  .gallery-grid {
+    gap: 8px;
+  }
+
+  .gallery-grid img,
+  .gallery-grid img:nth-child(3n) {
+    height: 200px;
+  }
+
+  .detail-info {
+    gap: 35px;
+    flex-direction: column;
+  }
+
+  .quote-section {
+    font-size: 27px;
+  }
+}
